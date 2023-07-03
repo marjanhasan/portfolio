@@ -14,6 +14,13 @@ const Intro = () => {
         skills to develop scalable web applications that deliver exceptional
         user experiences.
       </p>
+      <a
+        href="/resume.pdf"
+        download="resume.pdf"
+        className="text-center px-8 py-3 text-base font-medium rounded-md text-white bg-gradient-to-r from-yellow-500 to-pink-500 drop-shadow-md hover:stroke-white"
+      >
+        Download Resume
+      </a>
     </div>
   );
 };
