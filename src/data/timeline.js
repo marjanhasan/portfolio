@@ -1,37 +1,30 @@
 export default [
   {
     year: "Today",
-    title: "YouTube Content Creator",
-    duration: "6 years",
+    title: 'Regular student at "Phitron"',
+    duration: "From April 28th,2023",
     details:
-      "My humble attempt at building my version of the digital world one step at a time by documenting my coding journey and creating software engineering and computer science content to help those coming behind me.",
+      "Phitron is a platform where one can learn c,c++ and data stucture & algorithm from scratch. And solve thousands of problems at different online judge like leetcode, codeforces etc. I have learned c,c++ and solved more than 200+ problem and currently learning data structure and solving problems at leetcode.",
   },
   {
     year: "Today",
-    title: "Solo Indie Developer",
-    duration: "4 years",
+    title: 'Regular Student at "Programming hero"',
+    duration: "From Dec 28th,2022",
     details:
-      "I'm a solo indie developer building software for myself and clients to showcase on YouTube. All coding projects are built from the ground up, from planning and designing all the way to solving real-life problems with code.",
+      "Programming hero is a platform for those who needs a Complete Web Development Course and want to Learn everything which takes to get a job as a junior web developer from scratch. I have learned html, css, Javascript, ReactJs, Firebase, MongoDB, expressjs and NodeJs and created more than 20 small/large projects with it. I have completed the main course and currently working with job placement team to hunt a job. ",
   },
   {
     year: "2019",
-    title: "Software Engineer",
-    duration: "2 years",
-    details:
-      "I helped build an enterprise application for a Fortune 500 company in an Agile team setting. Our tech stack consisted of TypeSciprt, Angular, Java, Gradle, and a handful of other languages and tools.",
-  },
-  {
-    year: "2018",
-    title: "Bachelor's Degree in Computer Science",
-    duration: "5 years",
-    details:
-      "I pursued the knowledge that a computer science degree had to offer. I learned about computer architecture, computer science theory, an array of programming, and aspects of artificial intelligence.",
-  },
-  {
-    year: "2013",
     title: "First Line of Code",
     duration: "the beginning",
     details:
-      "I wrote my first line of real code that started this journey into digital craftsmanship that I never could've imagined, especially as someone who never saw themselves as anything other than a blue collar worker.",
+      "I wrote my first line of real code that started this journey when i was at my first semester at university that I never could've imagined, especially as someone who never saw themselves as anything other than a blue collar worker.",
+  },
+  {
+    year: "2019",
+    title: "Bachelor's Degree in Computer Science",
+    duration: "2 years",
+    details:
+      "I pursued the knowledge that a computer science degree had to offer. I learned about computer programming, data structure and algorithm, c, c++, html, css and after two years i droped out after 8th semester.",
   },
 ];
