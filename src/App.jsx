@@ -63,24 +63,26 @@ const App = () => {
   );
 
   return (
-    <>
-      <button
-        type="button"
-        onClick={handleThemeSwitch}
-        className="fixed p-2 z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
-      >
-        {theme === "dark" ? sun : moon}
-      </button>
-      <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
-        <div className="max-w-5xl w-11/12 mx-auto">
-          <Intro />
-          <Portfolio />
-          <Timeline />
-          <Contact />
-          <Footer />
+    <div className="bg-white dark:bg-stone-900 min-h-screen">
+      <div className="max-w-7xl mx-auto relative">
+        <button
+          type="button"
+          onClick={handleThemeSwitch}
+          className="fixed p-2 z-10 right-5 md:right-10 xl:right-40 2xl:right-1/4 top-4 bg-violet-300 dark:bg-orange-300 text-lg rounded-md"
+        >
+          {theme === "dark" ? sun : moon}
+        </button>
+        <div className="text-stone-900 dark:text-stone-300  font-inter">
+          <div className="max-w-5xl w-11/12 mx-auto">
+            <Intro />
+            <Portfolio />
+            <Timeline />
+            <Contact />
+            <Footer />
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

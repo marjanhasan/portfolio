@@ -1,29 +1,51 @@
-function PortfolioItem({ title, imgURL, stack, link }) {
+function PortfolioItem({
+  title,
+  imgURL,
+  stack,
+  liveLink,
+  githubClient,
+  githubServer,
+}) {
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden"
-    >
+    <div className="border-2 border-stone-900 dark:border-white rounded-md overflow-hidden flex flex-col gap-3">
       <img
         src={imgURL}
         alt="portfolio"
         className="w-full h-36 md:h-48 object-top cursor-pointer"
       />
-      <div className="w-full p-4">
-        <h3 className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold ">
+      <div className="w-full p-4 flex flex-col justify-between h-full">
+        <div className="text-lg md:text-xl dark:text-white  font-semibold mb-2">
           {title}
-        </h3>
-        <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm dark:text-white ">
-          {stack.map((item) => (
-            <span className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md">
+        </div>
+        <div className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm dark:text-white ">
+          {stack.map((item, i) => (
+            <span
+              key={i}
+              className="inline-block px-2 py-1 font-semibold border-2 border-stone-900 dark:border-white rounded-md"
+            >
               {item}
             </span>
           ))}
-        </p>
+        </div>
+        <div className="flex justify-between text-black text-xs md:text-sm font-semibold mt-3">
+          <button className="px-2 py-1 bg-[#FDBA74] rounded-md">
+            <a href={githubClient} rel="noopener noreferrer" target="_blank">
+              Github Client
+            </a>
+          </button>
+          <button className="px-2 py-1 bg-[#FDBA74] rounded-md">
+            <a href={liveLink} rel="noopener noreferrer" target="_blank">
+              Live Link
+            </a>
+          </button>
+          <button className="px-2 py-1 bg-[#FDBA74] rounded-md">
+            <a href={githubServer} rel="noopener noreferrer" target="_blank">
+              Github Server
+            </a>
+          </button>
+        </div>
       </div>
-    </a>
+    </div>
   );
 }
 
